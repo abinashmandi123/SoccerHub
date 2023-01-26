@@ -44,6 +44,7 @@ public class PlayerController {
 		player.setCountry(country);
 		try {
 			playerService.addPlayers(player);
+			System.out.println("Player is successfully added");
 		}catch(Exception e) {
 			return ResponseEntity.ok("Error during saving player "+playerId);
 		}
